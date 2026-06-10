@@ -66,7 +66,7 @@ export function LoginForm() {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="name@company.com"
-          className="h-12 w-full rounded-lg border border-slate-200 bg-white px-4 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10"
+          className="h-12 w-full rounded-lg border border-blue-100 bg-white px-4 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-blue-700 focus:ring-4 focus:ring-blue-700/10"
         />
       </div>
       <div className="space-y-2">
@@ -86,13 +86,13 @@ export function LoginForm() {
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             placeholder="Enter your password"
-            className="h-12 w-full rounded-lg border border-slate-200 bg-white px-4 pr-12 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10"
+            className="h-12 w-full rounded-lg border border-blue-100 bg-white px-4 pr-12 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-blue-700 focus:ring-4 focus:ring-blue-700/10"
           />
           <button
             type="button"
             aria-label={showPassword ? "Hide password" : "Show password"}
             onClick={() => setShowPassword((current) => !current)}
-            className="absolute right-3 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-md text-slate-500 transition hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-500/30"
+            className="absolute right-3 top-1/2 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-md text-slate-500 transition hover:bg-blue-50 hover:text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-700/30"
           >
             {showPassword ? (
               <svg
@@ -128,7 +128,7 @@ export function LoginForm() {
           </button>
         </div>
       </div>
-      <label className="flex cursor-pointer items-center justify-between gap-4 rounded-lg bg-slate-50 px-3 py-2.5">
+      <label className="flex cursor-pointer items-center justify-between gap-4 rounded-lg bg-blue-50 px-3 py-2.5">
         <span className="text-sm font-medium text-slate-700">
           Remember password
         </span>
@@ -138,7 +138,7 @@ export function LoginForm() {
           onChange={(event) => setRememberPassword(event.target.checked)}
           className="peer sr-only"
         />
-        <span className="flex h-7 w-12 items-center rounded-full bg-slate-300 p-1 transition peer-checked:bg-emerald-500 peer-focus-visible:ring-4 peer-focus-visible:ring-emerald-500/20">
+        <span className="flex h-7 w-12 items-center rounded-full bg-slate-300 p-1 transition peer-checked:bg-blue-700 peer-focus-visible:ring-4 peer-focus-visible:ring-blue-700/20">
           <span
             className={`h-5 w-5 rounded-full bg-white shadow-sm transition ${
               rememberPassword ? "translate-x-5" : "translate-x-0"
@@ -154,7 +154,7 @@ export function LoginForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="h-12 w-full rounded-lg bg-emerald-600 px-4 text-sm font-semibold text-white shadow-lg shadow-emerald-900/10 transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:bg-slate-400 disabled:shadow-none"
+        className="h-12 w-full rounded-lg bg-blue-800 px-4 text-sm font-semibold text-white shadow-lg shadow-blue-950/15 transition hover:bg-blue-950 disabled:cursor-not-allowed disabled:bg-slate-400 disabled:shadow-none"
       >
         {isSubmitting ? "Signing in..." : "Sign in"}
       </button>
