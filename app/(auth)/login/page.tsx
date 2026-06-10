@@ -5,7 +5,7 @@ export default function LoginPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_top_left,#ccfbf1,transparent_34%),linear-gradient(135deg,#f8fafc_0%,#eef2ff_100%)] px-4 py-10 text-slate-950">
       <section className="grid w-full max-w-6xl overflow-hidden rounded-3xl border border-white/80 bg-white shadow-2xl shadow-slate-900/10 md:min-h-[680px] md:grid-cols-2">
-        <div className="flex items-center px-6 py-10 sm:px-10 lg:px-14">
+        <div className="flex items-center px-6 py-10 sm:px-10 md:order-2 lg:px-14">
           <div className="w-full">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-600">
               Welcome back
@@ -23,7 +23,7 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <aside className="relative min-h-[420px] overflow-hidden bg-slate-950 p-6 text-white sm:p-8 lg:p-10">
+        <aside className="relative min-h-[420px] overflow-hidden bg-slate-950 p-6 text-white sm:p-8 md:order-1 lg:p-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(16,185,129,0.34),transparent_28%),radial-gradient(circle_at_85%_70%,rgba(59,130,246,0.26),transparent_30%)]" />
           <div className="absolute inset-x-8 bottom-8 top-28 rounded-2xl border border-white/10 bg-white/5" />
           <div className="relative z-10 flex h-full flex-col">
