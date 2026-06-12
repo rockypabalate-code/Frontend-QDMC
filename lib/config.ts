@@ -6,6 +6,5 @@ export const appConfig = {
 export const backendConfig = {
   apiBaseUrl:
     process.env.BACKEND_API_BASE_URL ??
-   
     "https://backend-api-qdmcph.onrender.com/api",
 } as const;

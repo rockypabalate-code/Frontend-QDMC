@@ -22,3 +22,12 @@ export function getPostLoginRoute(role: UserRole) {
 
   return "/dashboard";
 }
+export function getStoredUser() {
+  const user = localStorage.getItem(authStorageKeys.user);
+
+  if (!user) {
+    return null;
+  }
+
+  return JSON.parse(user);
+}
